@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/colors.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/typography.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/radius.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .cf-card { position:relative; aspect-ratio:1/1; border-radius:22px; overflow:hidden; cursor:pointer; background:#06121a; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+  .cf-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transform:scale(1.001); transition:transform 1.2s cubic-bezier(.16,.84,.34,1); }
+  .cf-card:hover .cf-img, .cf-card:focus-within .cf-img { transform:scale(1.07); }
+  .cf-grad { position:absolute; inset:0; pointer-events:none; background:linear-gradient(to top, rgba(4,10,14,0.94) 0%, rgba(4,10,14,0.5) 26%, rgba(4,10,14,0) 54%); transition:opacity .5s ease; }
+  .cf-veil { position:absolute; inset:0; pointer-events:none; opacity:0; background:linear-gradient(to top, rgba(4,11,14,0.95) 0%, rgba(5,18,22,0.86) 52%, rgba(6,22,28,0.62) 100%); transition:opacity .6s cubic-bezier(.2,.7,.2,1); }
+  .cf-card:hover .cf-veil, .cf-card:focus-within .cf-veil { opacity:1; }
+  .cf-content { position:absolute; left:0; right:0; bottom:0; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; }
+  .cf-eyebrow { display:inline-flex; align-items:center; gap:9px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11.5px; color:rgba(255,255,255,0.66); margin-bottom:14px; transition:transform .6s cubic-bezier(.2,.7,.2,1); }
+  .cf-title { font-family:var(--font-serif); font-weight:500; font-size:clamp(24px,2vw,30px); line-height:1.08; letter-spacing:-0.5px; margin:0; color:#fff; }
+  .cf-reveal { max-height:0; opacity:0; overflow:hidden; margin-top:0; transition:max-height .6s cubic-bezier(.2,.7,.2,1), opacity .5s ease, margin-top .6s cubic-bezier(.2,.7,.2,1); }
+  .cf-card:hover .cf-reveal, .cf-card:focus-within .cf-reveal { max-height:340px; opacity:1; margin-top:18px; }
+  .cf-copy { font-family:var(--font-body); font-weight:400; font-size:14.5px; line-height:1.6; color:rgba(255,255,255,0.78); margin:0 0 22px; }
+  .cf-cta { display:inline-flex; align-items:center; gap:10px; align-self:flex-start; font-family:var(--font-body); font-size:13.5px; font-weight:500; text-transform:lowercase; letter-spacing:0.1px; padding:12px 22px; border-radius:32px; background:#fff; color:#0a0f0d; text-decoration:none; transition:opacity .18s ease, transform .4s cubic-bezier(.2,.7,.2,1); }
+  .cf-cta:hover { opacity:.86; }
+  .cf-cta-arrow { transition:transform .4s cubic-bezier(.2,.7,.2,1); }
+  .cf-card:hover .cf-cta-arrow { transform:translateX(3px); }
+</style>
+</helmet>
+
+<section style="--font-serif:'Playfair Display', Georgia, 'Times New Roman', serif; font-family:var(--font-body); background:var(--surface-page); color:var(--text-primary);">
+  <div style="max-width:var(--container-max); margin:0 auto; padding:clamp(44px,5vw,76px) clamp(20px,5vw,56px);">
+
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:clamp(36px,4vw,56px);">
+      <div style="max-width:620px;">
+        <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12.5px; color:var(--text-tertiary); margin-bottom:16px;">Client focus</div>
+        <h2 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(32px,4.2vw,54px); line-height:1.05; letter-spacing:-1px; margin:0; color:var(--text-strong);">Built for the sectors that <span style="font-style:italic; font-weight:500;">cannot fail.</span></h2>
+      </div>
+      <p style="font-size:15.5px; line-height:1.6; color:var(--text-tertiary); max-width:340px; margin:0;">Specialized talent and infrastructure support, calibrated to the realities of your industry.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:clamp(16px,1.8vw,24px);">
+
+      <!-- CARD 1 — Venture & Growth -->
+      <article class="cf-card" tabindex="0">
+        <img class="cf-img" src="assets/ra-venture-growth-talent.jpg" alt="Close-up of glowing fiber optic data infrastructure">
+        <div class="cf-grad"></div>
+        <div class="cf-veil"></div>
+        <div class="cf-content">
+          <div class="cf-eyebrow"><span style="width:6px; height:6px; border-radius:50%; background:#ff7759;"></span>01 / Commercial</div>
+          <h3 class="cf-title">Venture &amp; Growth</h3>
+          <div class="cf-reveal">
+            <p class="cf-copy">Operating at the speed of your innovation, we provide the elite talent pipelines necessary to scale your infrastructure, allowing your leadership to focus on building the future without operational drag.</p>
+            <a href="Contact%20Us.dc.html" class="cf-cta">scale with us <span class="cf-cta-arrow">&#8594;</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2 — Public Sector & Defense -->
+      <article class="cf-card" tabindex="0">
+        <img class="cf-img" src="assets/ra-public-sector-defense-staffing.jpg" alt="Secure data operations facility with rows of server racks and blue indicator lights">
+        <div class="cf-grad"></div>
+        <div class="cf-veil"></div>
+        <div class="cf-content">
+          <div class="cf-eyebrow"><span style="width:6px; height:6px; border-radius:50%; background:#ff7759;"></span>02 / Federal</div>
+          <h3 class="cf-title">Public Sector &amp; Defense</h3>
+          <div class="cf-reveal">
+            <p class="cf-copy">As an SDVOSB-certified partner, we deliver mission-critical talent and infrastructure support to secure your operational readiness, ensuring total compliance and flawless execution on complex government mandates.</p>
+            <a href="Contact%20Us.dc.html" class="cf-cta">view federal capabilities <span class="cf-cta-arrow">&#8594;</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3 — Healthcare -->
+      <article class="cf-card" tabindex="0">
+        <img class="cf-img" src="assets/ra-healthcare-staffing.jpg" alt="Advanced clinical infrastructure with emerald-lit sensor arrays and fiber-optic strands">
+        <div class="cf-grad"></div>
+        <div class="cf-veil"></div>
+        <div class="cf-content">
+          <div class="cf-eyebrow"><span style="width:6px; height:6px; border-radius:50%; background:#ff7759;"></span>03 / Clinical</div>
+          <h3 class="cf-title">Healthcare</h3>
+          <div class="cf-reveal">
+            <p class="cf-copy">Partnering with highly regulated medical and commercial sectors, we integrate top-tier leadership and technical staff into your facilities to optimize patient outcomes and safeguard operational infrastructure.</p>
+            <a href="Contact%20Us.dc.html" class="cf-cta">view healthcare solutions <span class="cf-cta-arrow">&#8594;</span></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:820}}"></script>
+</body>
+</html>

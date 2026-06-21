@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>For Talent — Open Positions &amp; Career Advisory | ReidAtlantic</title>
+<meta name="description" content="Specialized professionals placed with precision. Explore open mandates in security, clinical data, platform engineering, and more.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://www.reidatlantic.com/for-talent">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ReidAtlantic">
+<meta property="og:title" content="For Talent — Open Positions &amp; Career Advisory | ReidAtlantic">
+<meta property="og:description" content="We represent specialized professionals to the teams building critical infrastructure.">
+<meta property="og:image" content="assets/ra-talent-candidate-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/colors.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/typography.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/radius.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/elevation.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  @keyframes raDrift { 0%{transform:scale(1.12) translate3d(0,0,0);} 50%{transform:scale(1.18) translate3d(-1.6%,-1.2%,0);} 100%{transform:scale(1.12) translate3d(0,0,0);} }
+  @keyframes raStreak { 0%,100%{opacity:.35;} 50%{opacity:.7;} }
+  .ra-navlink { transition: opacity .16s ease; }
+  .ra-navlink:hover { opacity: 1 !important; }
+  .ra-soft { transition: opacity .16s ease, color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease; }
+  .ra-soft:hover { opacity: .82; }
+  .ra-card { transition: transform .4s cubic-bezier(.2,.7,.2,1), box-shadow .4s ease, border-color .3s ease; }
+  .ra-card:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -34px rgba(0,40,30,.4); }
+  .ra-arrow { transition: transform .4s cubic-bezier(.2,.7,.2,1); display:inline-block; }
+  .ra-card:hover .ra-arrow { transform: rotate(-45deg); }
+  .ra-step { transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+  .ra-step:hover { transform: translateY(-5px); }
+  .ra-row { transition: padding-left .35s cubic-bezier(.2,.7,.2,1); }
+  .ra-row:hover { padding-left: 12px; }
+  .ra-link-u { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s cubic-bezier(.2,.7,.2,1); }
+  .ra-link-u:hover { background-size: 100% 1px; }
+</style>
+</helmet>
+
+<div style="--font-serif:'Playfair Display', Georgia, 'Times New Roman', serif; font-family: var(--font-body); color: var(--text-primary); background: var(--surface-page); overflow-x: hidden; position: relative;">
+
+  <!-- ===================== GLOBAL NAV ===================== -->
+  <nav style="position:absolute; top:0; left:0; right:0; z-index:50; display:grid; grid-template-columns:1fr auto; align-items:center; padding:24px clamp(20px,5vw,56px); background:{{ navBg }}; backdrop-filter:{{ navBlur }}; -webkit-backdrop-filter:{{ navBlur }}; border-bottom:{{ navBorder }}; box-shadow:{{ navShadow }}; transition:background .3s ease, border-color .3s ease, box-shadow .3s ease, color .3s ease; color:{{ navColor }};">
+    <a href="ReidAtlantic%20Homepage.dc.html" style="display:inline-flex; align-items:center; text-decoration:none;"><img src="assets/ra-logo-white.png" alt="ReidAtlantic" style="height:42px; width:auto; display:block;"></a>
+    <div style="display:flex; align-items:center; gap:clamp(16px,2.6vw,34px);">
+      <a href="For%20Employers.dc.html" class="ra-navlink" style="text-decoration:none; color:{{ navColor }}; font-size:14.5px; opacity:.82;">For Employers</a>
+      <a href="For%20Talent.dc.html" class="ra-navlink" style="text-decoration:none; color:{{ navColor }}; font-size:14.5px; opacity:1; font-weight:500;">For Talent</a>
+      <a href="Contact%20Us.dc.html" class="ra-soft" style="text-decoration:none; color:{{ navColor }}; font-size:14px; padding:9px 22px; border:1px solid {{ contactBorder }}; border-radius:var(--radius-pill); white-space:nowrap;">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" style="position:relative; min-height:clamp(560px,84vh,860px); background:#070d0b; overflow:hidden; display:flex; align-items:center;">
+    <div style="position:absolute; inset:0;"><img src="assets/ra-talent-candidate-hero.jpg" alt="Lifelike close-up of a happy Asian technology professional smiling in a modern office" style="width:100%; height:100%; object-fit:cover; object-position:center right; display:block;"></div>
+    <div style="position:absolute; inset:0; pointer-events:none; mix-blend-mode:screen; animation:raStreak 10s ease-in-out infinite; background: linear-gradient(116deg, transparent 44%, rgba(140,220,196,0.12) 52%, transparent 58%);"></div>
+    <div style="position:absolute; inset:0; background: linear-gradient(101deg, #07100d 0%, #07100d 30%, rgba(7,16,13,0.9) 42%, rgba(7,16,13,0.5) 56%, rgba(7,16,13,0) 72%);"></div>
+
+    <div style="position:relative; width:100%; max-width:var(--container-wide); margin:0 auto; padding:140px clamp(20px,5vw,56px) 90px;">
+      <div style="max-width:700px;">
+        <div style="display:inline-flex; align-items:center; gap:10px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12.5px; color:rgba(255,255,255,0.62); margin-bottom:28px;">
+          <span style="width:6px; height:6px; border-radius:50%; background:#ff7759;"></span>For talent · Career advisory
+        </div>
+        <h1 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(44px,6vw,84px); line-height:1.02; letter-spacing:-1.4px; margin:0; color:#ffffff;">Your next chapter,<br>placed with <span style="font-style:italic; font-weight:500;">precision.</span></h1>
+        <p style="font-size:clamp(16px,1.4vw,19px); line-height:1.55; color:rgba(255,255,255,0.74); max-width:500px; margin:28px 0 0;">We represent specialized professionals to the teams building critical infrastructure — discreetly, deliberately, and entirely on your terms.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:40px;">
+          <a href="#mandates" class="ra-soft" style="display:inline-flex; align-items:center; justify-content:center; padding:16px 34px; border-radius:var(--radius-pill); background:#0b6b59; color:#fff; font-size:15px; font-weight:500; text-decoration:none; box-shadow:0 18px 40px -22px rgba(11,107,89,.9);">Browse open mandates</a>
+          <a href="Contact%20Us.dc.html" class="ra-soft" style="display:inline-flex; align-items:center; justify-content:center; padding:16px 34px; border-radius:var(--radius-pill); background:#fff; color:#17171c; font-size:15px; font-weight:500; text-decoration:none;">Submit your profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPEN MANDATES ===================== -->
+  <section id="mandates" style="max-width:var(--container-max); margin:0 auto; padding:clamp(56px,7vw,104px) clamp(20px,5vw,56px);">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:40px;">
+      <div>
+        <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12.5px; color:var(--text-tertiary); margin-bottom:16px;">Live mandates</div>
+        <h2 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(32px,4.2vw,54px); line-height:1.04; letter-spacing:-0.8px; margin:0; color:var(--text-strong);">Open positions</h2>
+      </div>
+      <a href="Contact%20Us.dc.html" class="ra-link-u" style="text-decoration:none; color:#0b6b59; font-size:15px; font-weight:500; align-self:flex-end;">Don't see the right role? Introduce yourself &#8594;</a>
+    </div>
+    <div style="border-top:1px solid var(--border-default);">
+      <sc-for list="{{ positions }}" as="position" hint-placeholder-count="5">
+        <div class="ra-row" style="display:grid; grid-template-columns:minmax(0,2.5fr) minmax(0,1.7fr) minmax(0,1.2fr) auto auto; align-items:center; gap:clamp(12px,2vw,28px); padding:clamp(20px,2.4vw,28px) 0; border-bottom:1px solid var(--border-default);">
+          <div style="font-family:var(--font-body); font-weight:600; font-size:clamp(16px,1.5vw,19px); letter-spacing:-0.2px; color:var(--text-strong);">{{ position.title }}</div>
+          <div style="font-size:14.5px; color:var(--text-tertiary);">{{ position.area }}</div>
+          <div style="font-size:14.5px; color:var(--text-tertiary);">{{ position.location }}</div>
+          <div style="justify-self:start;"><span style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11px; color:var(--text-primary); border:1px solid var(--border-default); border-radius:var(--radius-full); padding:5px 12px; white-space:nowrap;">{{ position.commitment }}</span></div>
+          <button onClick="{{ position.onApply }}" class="ra-soft" style="cursor:pointer; justify-self:end; font-family:var(--font-body); font-size:13.5px; font-weight:500; padding:10px 22px; border-radius:var(--radius-pill); white-space:nowrap; background:{{ position.applyBg }}; color:{{ position.applyColor }}; border:{{ position.applyBorder }};">{{ position.applyLabel }}</button>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ===================== WHY WORK WITH US ===================== -->
+  <section style="max-width:var(--container-max); margin:0 auto; padding:clamp(64px,8vw,116px) clamp(20px,5vw,56px);">
+    <div style="max-width:680px;">
+      <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12.5px; color:var(--text-tertiary); margin-bottom:16px;">Why work with us</div>
+      <h2 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(32px,4.4vw,56px); line-height:1.05; letter-spacing:-1px; margin:0; color:var(--text-strong);">Representation, <span style="font-style:italic; font-weight:500;">not a job board.</span></h2>
+      <p style="font-size:clamp(16px,1.4vw,18px); line-height:1.62; color:var(--text-tertiary); margin:24px 0 0;">You are not an application in a queue. A principal advocates for you to the people making the decision — and gives you straight counsel whether or not we place you.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(16px,2vw,24px); margin-top:clamp(40px,5vw,64px);">
+      <sc-for list="{{ benefits }}" as="benefit" hint-placeholder-count="4">
+        <div style="display:flex; flex-direction:column; padding:32px 30px; border-radius:var(--radius-md); background:var(--surface-stone); border:1px solid #e3e0d9;">
+          <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11.5px; color:#0b6b59; margin-bottom:18px;">{{ benefit.tag }}</div>
+          <h3 style="font-family:var(--font-body); font-weight:600; font-size:clamp(19px,1.7vw,23px); line-height:1.2; letter-spacing:-0.3px; margin:0; color:var(--text-strong);">{{ benefit.title }}</h3>
+          <p style="font-size:15px; line-height:1.58; color:var(--text-tertiary); margin:14px 0 0;">{{ benefit.copy }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section style="background:var(--surface-navy); color:#fff;">
+    <div style="max-width:var(--container-max); margin:0 auto; padding:clamp(64px,8vw,116px) clamp(20px,5vw,56px);">
+      <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12.5px; color:rgba(255,255,255,0.6); margin-bottom:18px;">The candidate journey</div>
+      <h2 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(30px,4vw,52px); line-height:1.06; letter-spacing:-0.8px; margin:0; max-width:720px; color:#fff;">Four steps, <span style="font-style:italic; font-weight:500;">one accountable principal.</span></h2>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(18px,2.4vw,36px); margin-top:clamp(44px,6vw,76px);">
+        <sc-for list="{{ steps }}" as="step" hint-placeholder-count="4">
+          <div class="ra-step">
+            <div style="padding-bottom:16px; border-bottom:1px solid rgba(255,255,255,0.18); margin-bottom:16px;"><span style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12px; color:rgba(255,255,255,0.55);">{{ step.num }}</span></div>
+            <h3 style="font-family:var(--font-body); font-weight:600; font-size:clamp(18px,1.5vw,21px); line-height:1.2; letter-spacing:-0.3px; margin:0; color:#fff;">{{ step.title }}</h3>
+            <p style="font-size:14.5px; line-height:1.58; color:rgba(255,255,255,0.66); margin:13px 0 0;">{{ step.copy }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIAL ===================== -->
+  <section style="background:var(--surface-page);">
+    <div style="max-width:920px; margin:0 auto; padding:clamp(64px,8vw,120px) clamp(20px,5vw,56px); text-align:center;">
+      <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12px; color:var(--text-tertiary); margin-bottom:30px;">From a placed candidate</div>
+      <blockquote style="font-family:var(--font-serif); font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.28; letter-spacing:-0.5px; margin:0; color:var(--text-strong);">&#8220;They knew the role before I did, prepared me for every round, and were honest when a fit wasn&#8217;t there. It felt like having an advocate, not a recruiter.&#8221;</blockquote>
+      <div style="margin-top:30px; font-size:14px; color:var(--text-tertiary);">Placed — Principal Security Engineer, Financial Services</div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section style="background:var(--surface-page); padding:clamp(40px,5vw,72px) clamp(20px,5vw,56px) clamp(56px,7vw,104px);">
+    <div style="position:relative; max-width:var(--container-max); margin:0 auto; border-radius:var(--radius-lg); overflow:hidden; background:#0a0c0b;">
+      <div style="position:absolute; inset:0; background: radial-gradient(120% 120% at 82% 8%, rgba(11,107,89,0.5), transparent 56%), radial-gradient(90% 90% at 8% 96%, rgba(8,46,68,0.55), transparent 58%), linear-gradient(126deg, #07120f 0%, #0a2a25 48%, #06181f 100%);"></div>
+      <div style="position:relative; padding:clamp(60px,8vw,112px) clamp(28px,6vw,80px); text-align:center; color:#fff;">
+        <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12.5px; color:rgba(255,255,255,0.6); margin-bottom:22px;">Ready when you are</div>
+        <h2 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(32px,4.6vw,60px); line-height:1.05; letter-spacing:-1px; margin:0 auto; max-width:780px;">Tell us where you want to go <span style="font-style:italic;">next.</span></h2>
+        <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:40px;">
+          <a href="Contact%20Us.dc.html" class="ra-soft" style="display:inline-flex; align-items:center; justify-content:center; padding:16px 34px; border-radius:var(--radius-pill); background:#fff; color:#17171c; font-size:15px; font-weight:500; text-decoration:none;">Submit your profile</a>
+          <a href="#mandates" class="ra-soft" style="display:inline-flex; align-items:center; justify-content:center; padding:16px 34px; border-radius:var(--radius-pill); background:transparent; color:#fff; font-size:15px; font-weight:500; text-decoration:none; border:1px solid rgba(255,255,255,0.5);">Browse mandates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,360px"></dc-import>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;}}">
+class Component extends DCLogic {
+  state = { scrolled: false, applied: {} };
+  componentDidMount() {
+    this._onScroll = () => {
+      const s = window.scrollY > 24;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+  componentWillUnmount() { if (this._onScroll) window.removeEventListener('scroll', this._onScroll); }
+
+  renderVals() {
+    const scrolled = this.state.scrolled;
+    const applied = this.state.applied;
+
+    const benefits = [
+      { tag: 'Access', title: 'Closed mandates', copy: 'Roles that never reach a job board. We introduce you directly to the principals making the decision.' },
+      { tag: 'Advocacy', title: 'Founder-led representation', copy: 'A principal works your search end to end — calibration, introductions, offer, and close. No junior handlers.' },
+      { tag: 'Discretion', title: 'Absolute confidentiality', copy: 'Your search stays private. We move only with your explicit consent, at every single step.' },
+      { tag: 'Counsel', title: 'Guidance, not transactions', copy: 'Honest advice on positioning, compensation, and timing — whether or not we end up placing you.' },
+    ];
+
+    const steps = [
+      { num: '01 / Introduce', title: 'Share your profile', copy: 'Tell us who you are and what you are looking for. One conversation, no obligation.' },
+      { num: '02 / Calibrate', title: 'Map your fit', copy: 'A principal maps your strengths to live mandates and the market\u2019s real bar.' },
+      { num: '03 / Represent', title: 'Go to market', copy: 'We introduce you to matched principals, prepare you fully, and manage every round.' },
+      { num: '04 / Place', title: 'Close & settle', copy: 'We negotiate the offer and stand with you through onboarding and beyond.' },
+    ];
+
+    const positionsRaw = [
+      { id: 'p1', title: 'Principal DevSecOps Engineer', area: 'DevSecOps \u00b7 Financial Services', location: 'Remote \u2014 United States', commitment: 'Full-Time' },
+      { id: 'p2', title: 'Cybersecurity Risk Lead', area: 'Cybersecurity & IT Risk', location: 'Washington, DC', commitment: 'Full-Time' },
+      { id: 'p3', title: 'Clinical Data Architect', area: 'Healthcare IT & Life Sciences', location: 'Boston, MA', commitment: 'Contract' },
+      { id: 'p4', title: 'Senior Data Engineer', area: 'Data & AI Infrastructure', location: 'New York, NY', commitment: 'Full-Time' },
+      { id: 'p5', title: 'Health Informatics Manager', area: 'Healthcare IT & Clinical Ops', location: 'Chicago, IL', commitment: 'Full-Time' },
+    ];
+
+    const positions = positionsRaw.map(p => {
+      const isOn = !!applied[p.id];
+      return {
+        ...p,
+        applyLabel: isOn ? 'Applied' : 'Apply now',
+        applyBg: isOn ? '#0b6b59' : 'transparent',
+        applyColor: isOn ? '#ffffff' : '#17171c',
+        applyBorder: isOn ? '1px solid #0b6b59' : '1px solid #d9d9dd',
+        onApply: () => this.setState(s => ({ applied: { ...s.applied, [p.id]: !s.applied[p.id] } })),
+      };
+    });
+
+    return {
+      benefits, steps, positions,
+      navBg: 'transparent',
+      navBlur: 'none',
+      navBorder: 'none',
+      navShadow: 'none',
+      navColor: '#ffffff',
+      contactBorder: 'rgba(255,255,255,0.55)',
+    };
+  }
+}
+</script>
+</body>
+</html>

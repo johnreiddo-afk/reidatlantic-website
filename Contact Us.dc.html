@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Contact ReidAtlantic — Talk to a Principal</title>
+<meta name="description" content="Tell us who you need to hire or where you want to go. A principal — not a sourcing desk — replies within one business day.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://www.reidatlantic.com/contact">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ReidAtlantic">
+<meta property="og:title" content="Contact ReidAtlantic — Talk to a Principal">
+<meta property="og:description" content="Start a search or a conversation. Confidential by default.">
+<meta property="og:image" content="assets/ra-staffing-team-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/colors.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/typography.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/radius.css">
+<link rel="stylesheet" href="_ds/reidatlantic-design-system-92e79fff-ded3-4607-9e66-29af1e90e217/tokens/elevation.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  @keyframes raDrift { 0%{transform:scale(1.1) translate3d(0,0,0);} 50%{transform:scale(1.16) translate3d(-1.4%,-1%,0);} 100%{transform:scale(1.1) translate3d(0,0,0);} }
+  .ra-navlink { transition: opacity .16s ease; }
+  .ra-navlink:hover { opacity: 1 !important; }
+  .ra-soft { transition: opacity .16s ease, color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease; }
+  .ra-soft:hover { opacity: .82; }
+  .ra-field { width:100%; font-family:var(--font-body); font-size:15px; color:var(--text-strong); background:#fff; border:1px solid var(--border-default); border-radius:var(--radius-xs); padding:13px 15px; outline:none; transition:border-color .16s ease, box-shadow .16s ease; }
+  .ra-field::placeholder { color:#a6a6b0; }
+  .ra-field:focus { border-color:#9b60aa; box-shadow:0 0 0 3px rgba(155,96,170,0.14); }
+  textarea.ra-field { resize:vertical; min-height:116px; line-height:1.5; }
+  .ra-link-u { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s cubic-bezier(.2,.7,.2,1); }
+  .ra-link-u:hover { background-size: 100% 1px; }
+</style>
+</helmet>
+
+<div style="--font-serif:'Playfair Display', Georgia, 'Times New Roman', serif; font-family: var(--font-body); color: var(--text-primary); background: var(--surface-page); overflow-x: hidden; position: relative;">
+
+  <!-- ===================== GLOBAL NAV ===================== -->
+  <nav style="position:absolute; top:0; left:0; right:0; z-index:50; display:grid; grid-template-columns:1fr auto; align-items:center; padding:24px clamp(20px,5vw,56px); background:{{ navBg }}; backdrop-filter:{{ navBlur }}; -webkit-backdrop-filter:{{ navBlur }}; border-bottom:{{ navBorder }}; box-shadow:{{ navShadow }}; transition:background .3s ease, border-color .3s ease, box-shadow .3s ease, color .3s ease; color:{{ navColor }};">
+    <a href="ReidAtlantic%20Homepage.dc.html" style="display:inline-flex; align-items:center; text-decoration:none;"><img src="assets/ra-logo-white.png" alt="ReidAtlantic" style="height:42px; width:auto; display:block;"></a>
+    <div style="display:flex; align-items:center; gap:clamp(16px,2.6vw,34px);">
+      <a href="For%20Employers.dc.html" class="ra-navlink" style="text-decoration:none; color:{{ navColor }}; font-size:14.5px; opacity:.82;">For Employers</a>
+      <a href="For%20Talent.dc.html" class="ra-navlink" style="text-decoration:none; color:{{ navColor }}; font-size:14.5px; opacity:.82;">For Talent</a>
+      <a href="Contact%20Us.dc.html" class="ra-soft" style="text-decoration:none; color:{{ contactTextColor }}; font-size:14px; padding:9px 22px; border:1px solid {{ contactBorder }}; border-radius:var(--radius-pill); white-space:nowrap; background:{{ contactFill }};">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO STRIP ===================== -->
+  <section style="position:relative; background:#070d0b; overflow:hidden;">
+    <div style="position:absolute; inset:0;"><img src="assets/ra-staffing-team-hero.jpg" alt="A diverse team of smiling professionals collaborating in a bright modern office" style="width:100%; height:100%; object-fit:cover; object-position:center right; display:block;"></div>
+    <div style="position:absolute; inset:0; background: linear-gradient(100deg, rgba(6,14,12,0.95) 0%, rgba(6,14,12,0.86) 34%, rgba(6,14,12,0.52) 56%, rgba(6,14,12,0.16) 78%, rgba(6,14,12,0) 100%);"></div>
+    <div style="position:relative; max-width:var(--container-max); margin:0 auto; padding:160px clamp(20px,5vw,56px) clamp(64px,8vw,96px);">
+      <div style="display:inline-flex; align-items:center; gap:10px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:12.5px; color:rgba(255,255,255,0.62); margin-bottom:24px;">
+        <span style="width:6px; height:6px; border-radius:50%; background:#ff7759;"></span>Start a conversation
+      </div>
+      <h1 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(40px,5.6vw,76px); line-height:1.02; letter-spacing:-1.4px; margin:0; color:#ffffff; max-width:820px;">Your next hire — or your next chapter — <span style="font-style:italic; font-weight:500;">begins here.</span></h1>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SPLIT ===================== -->
+  <section style="max-width:var(--container-max); margin:0 auto; padding:clamp(56px,7vw,104px) clamp(20px,5vw,56px);">
+    <div style="display:grid; grid-template-columns:0.85fr 1.15fr; gap:clamp(40px,6vw,88px); align-items:start;">
+
+      <!-- LEFT: details -->
+      <div>
+        <h2 style="font-family:var(--font-serif); font-weight:400; font-size:clamp(26px,2.8vw,38px); line-height:1.1; letter-spacing:-0.6px; margin:0; color:var(--text-strong);">Talk to a principal.</h2>
+        <p style="font-size:16px; line-height:1.62; color:var(--text-tertiary); margin:20px 0 0; max-width:380px;">Tell us what you are hiring for or where you want to go. A principal — not a sourcing desk — reads every message and replies personally.</p>
+
+        <div style="margin-top:clamp(36px,4vw,52px); display:flex; flex-direction:column; gap:28px;">
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11px; color:var(--text-tertiary);">Email</div>
+            <a href="mailto:partners@reidatlantic.com" class="ra-link-u" style="font-size:17px; color:var(--text-strong); text-decoration:none; align-self:flex-start;">partners@reidatlantic.com</a>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11px; color:var(--text-tertiary);">Response time</div>
+            <div style="font-size:17px; color:var(--text-strong);">Within one business day</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11px; color:var(--text-tertiary);">Offices</div>
+            <div style="font-size:17px; color:var(--text-strong); line-height:1.5;">New York &nbsp;·&nbsp; Washington, DC &nbsp;·&nbsp; Boston</div>
+          </div>
+        </div>
+
+        <div style="margin-top:clamp(36px,4vw,52px); padding:24px; border-radius:var(--radius-md); background:var(--surface-stone); border:1px solid #e3e0d9;">
+          <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11px; color:#0b6b59; margin-bottom:10px;">Compliance</div>
+          <p style="font-size:13.5px; line-height:1.55; color:var(--text-tertiary); margin:0;">SOC 2 Type II controls. EEO-compliant search. Every conversation is confidential by default.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: form -->
+      <div style="border:1px solid var(--border-default); border-radius:var(--radius-lg); padding:clamp(28px,3vw,44px); background:#fff;">
+        <!-- Hidden static form: lets Netlify detect this form at deploy. The visible form POSTs to it via fetch. -->
+        <form name="contact" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" hidden aria-hidden="true" style="display:none;">
+          <input type="text" name="role">
+          <input type="text" name="name">
+          <input type="email" name="email">
+          <input type="text" name="org">
+          <textarea name="message"></textarea>
+          <input type="file" name="file">
+          <input type="text" name="bot-field">
+        </form>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex; flex-direction:column; align-items:flex-start; min-height:440px; justify-content:center;">
+            <div style="width:54px; height:54px; border-radius:50%; background:#eef6f2; border:1px solid #cfe7df; display:flex; align-items:center; justify-content:center; margin-bottom:24px;">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#0b6b59" stroke-width="1.6"><path d="M6 13.5 11 18.5 20 8"/></svg>
+            </div>
+            <h3 style="font-family:var(--font-serif); font-weight:400; font-size:30px; letter-spacing:-0.5px; margin:0; color:var(--text-strong);">Message received.</h3>
+            <p style="font-size:15.5px; line-height:1.6; color:var(--text-tertiary); margin:14px 0 0; max-width:380px;">Thank you, {{ firstName }}. A principal will be in touch within one business day. We keep every enquiry confidential.</p>
+            <button onClick="{{ reset }}" class="ra-soft" style="cursor:pointer; margin-top:30px; font-family:var(--font-body); font-size:14px; font-weight:500; padding:13px 26px; border-radius:var(--radius-pill); background:transparent; color:#17171c; border:1px solid #d9d9dd;">Send another message</button>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <div style="font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.28px; font-size:11px; color:var(--text-tertiary); margin-bottom:12px;">I am a</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:26px;">
+              <button onClick="{{ pickEmployer }}" class="ra-soft" style="cursor:pointer; font-family:var(--font-body); font-size:14.5px; font-weight:500; padding:13px; border-radius:var(--radius-sm); background:{{ employerBg }}; color:{{ employerColor }}; border:{{ employerBorder }};">Employer</button>
+              <button onClick="{{ pickCandidate }}" class="ra-soft" style="cursor:pointer; font-family:var(--font-body); font-size:14.5px; font-weight:500; padding:13px; border-radius:var(--radius-sm); background:{{ candidateBg }}; color:{{ candidateColor }}; border:{{ candidateBorder }};">Candidate</button>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <label style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-size:13px; font-weight:500; color:var(--text-strong);">Full name</span>
+                <input class="ra-field" type="text" placeholder="Jordan Avery" value="{{ name }}" onInput="{{ onName }}">
+              </label>
+              <label style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-size:13px; font-weight:500; color:var(--text-strong);">Work email</span>
+                <input class="ra-field" type="email" placeholder="you@company.com" value="{{ email }}" onInput="{{ onEmail }}">
+              </label>
+            </div>
+
+            <label style="display:flex; flex-direction:column; gap:8px; margin-top:16px;">
+              <span style="font-size:13px; font-weight:500; color:var(--text-strong);">{{ orgLabel }}</span>
+              <input class="ra-field" type="text" placeholder="{{ orgPlaceholder }}" value="{{ org }}" onInput="{{ onOrg }}">
+            </label>
+
+            <label style="display:flex; flex-direction:column; gap:8px; margin-top:16px;">
+              <span style="font-size:13px; font-weight:500; color:var(--text-strong);">{{ messageLabel }}</span>
+              <textarea class="ra-field" placeholder="{{ messagePlaceholder }}" value="{{ message }}" onInput="{{ onMessage }}"></textarea>
+            </label>
+
+            <label style="display:flex; flex-direction:column; gap:8px; margin-top:16px;">
+              <span style="font-size:13px; font-weight:500; color:var(--text-strong);">{{ fileLabel }}</span>
+              <div style="position:relative;">
+                <input type="file" accept=".pdf,.doc,.docx" onChange="{{ onFile }}" style="position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer;">
+                <div style="display:flex; align-items:center; gap:12px; width:100%; border:1px dashed var(--border-default); border-radius:var(--radius-xs); padding:13px 15px; background:#fbfbfa;">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#0b6b59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12V3"/><path d="M5.5 6.5 9 3l3.5 3.5"/><path d="M3 11.5v2A1.5 1.5 0 0 0 4.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-2"/></svg>
+                  <span style="font-size:14px; color:{{ fileTextColor }}; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ fileText }}</span>
+                </div>
+              </div>
+            </label>
+
+            <button onClick="{{ submit }}" class="ra-soft" style="cursor:pointer; width:100%; margin-top:24px; font-family:var(--font-body); font-size:15px; font-weight:500; padding:16px; border-radius:var(--radius-pill); background:{{ submitBg }}; color:#fff; border:none; box-shadow:0 18px 40px -24px rgba(11,107,89,.9);">{{ submitLabel }}</button>
+            <p style="font-size:12.5px; line-height:1.5; color:var(--text-tertiary); margin:16px 0 0; text-align:center;">By submitting, you agree to be contacted about your enquiry. We never share your details.</p>
+          </div>
+        </sc-if>
+      </div>
+
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,360px"></dc-import>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;}}">
+class Component extends DCLogic {
+  state = { scrolled: false, role: 'employer', name: '', email: '', org: '', message: '', fileName: '', submitted: false, sending: false, touched: false };
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const s = window.scrollY > 24;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+  componentWillUnmount() { if (this._onScroll) window.removeEventListener('scroll', this._onScroll); }
+
+  renderVals() {
+    const scrolled = this.state.scrolled;
+    const role = this.state.role;
+    const isEmployer = role === 'employer';
+    const valid = this.state.name.trim() && this.state.email.trim() && this.state.message.trim();
+    const firstName = (this.state.name.trim().split(/\s+/)[0]) || 'there';
+
+    const segActive = { bg: '#17171c', color: '#ffffff', border: '1px solid #17171c' };
+    const segIdle = { bg: '#fff', color: '#17171c', border: '1px solid #d9d9dd' };
+    const emp = isEmployer ? segActive : segIdle;
+    const cand = !isEmployer ? segActive : segIdle;
+
+    return {
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      firstName,
+      name: this.state.name, email: this.state.email, org: this.state.org, message: this.state.message,
+
+      orgLabel: isEmployer ? 'Company' : 'Current company',
+      orgPlaceholder: isEmployer ? 'Acme Inc.' : 'Where you are now (optional)',
+      messageLabel: isEmployer ? 'What are you hiring for?' : 'What are you looking for?',
+      messagePlaceholder: isEmployer ? 'Tell us about the role, the team, and your timeline.' : 'Tell us about your background and the kind of role you want next.',
+
+      fileLabel: isEmployer ? 'Job description (optional)' : 'Resume / CV (optional)',
+      fileText: this.state.fileName || (isEmployer ? 'Attach a job description — PDF or DOCX' : 'Attach your resume — PDF or DOCX'),
+      fileTextColor: this.state.fileName ? 'var(--text-strong)' : '#a6a6b0',
+
+      employerBg: emp.bg, employerColor: emp.color, employerBorder: emp.border,
+      candidateBg: cand.bg, candidateColor: cand.color, candidateBorder: cand.border,
+
+      submitLabel: this.state.sending ? 'Sending…' : (valid ? (isEmployer ? 'Request talent' : 'Submit profile') : 'Send message'),
+      submitBg: valid ? '#0b6b59' : '#9bb8af',
+
+      pickEmployer: () => this.setState({ role: 'employer' }),
+      pickCandidate: () => this.setState({ role: 'candidate' }),
+      onName: (e) => this.setState({ name: e.target.value }),
+      onEmail: (e) => this.setState({ email: e.target.value }),
+      onOrg: (e) => this.setState({ org: e.target.value }),
+      onMessage: (e) => this.setState({ message: e.target.value }),
+      onFile: (e) => { const f = e.target.files && e.target.files[0]; this._file = f || null; this.setState({ fileName: f ? f.name : '' }); },
+      submit: () => {
+        if (!valid || this.state.sending) return;
+        this.setState({ sending: true });
+        const data = new FormData();
+        data.append('form-name', 'contact');
+        data.append('role', this.state.role);
+        data.append('name', this.state.name);
+        data.append('email', this.state.email);
+        data.append('org', this.state.org);
+        data.append('message', this.state.message);
+        if (this._file) data.append('file', this._file, this._file.name);
+        const done = () => this.setState({ submitted: true, sending: false });
+        fetch('/', { method: 'POST', body: data })
+          .then(done)
+          .catch((err) => { console.warn('Form submit (expected to fail outside Netlify preview):', err); done(); });
+      },
+      reset: () => { this._file = null; this.setState({ submitted: false, sending: false, name: '', email: '', org: '', message: '', fileName: '' }); },
+
+      navBg: 'transparent',
+      navBlur: 'none',
+      navBorder: 'none',
+      navShadow: 'none',
+      navColor: '#ffffff',
+      contactBorder: 'rgba(255,255,255,0.55)',
+      contactFill: 'transparent',
+      contactTextColor: '#ffffff',
+    };
+  }
+}
+</script>
+</body>
+</html>
