@@ -1,0 +1,12 @@
+/* ReidAtlantic — Webfonts
+   PROPRIETARY SUBSTITUTION: the source brand uses CohereText (display),
+   Unica77 Cohere Web (body/UI) and CohereMono (technical labels). Those
+   binaries are not licensed for redistribution, so we load the documented
+   fallbacks from Google Fonts:
+     - Space Grotesk  -> stands in for CohereText (carved, slightly mono display)
+     - Inter          -> stands in for Unica77 (neutral grotesque body/UI)
+     - Space Mono     -> stands in for CohereMono (uppercase technical labels)
+   Replace these @import lines with self-hosted @font-face rules pointing at
+   the licensed binaries when available. */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');

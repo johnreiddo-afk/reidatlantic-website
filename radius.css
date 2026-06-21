@@ -1,0 +1,13 @@
+/* ReidAtlantic — Radius tokens
+   Rounded but not cute. Major media cards sit at 22px; CTAs are 32px pills.
+   Never round major media below 8px. */
+
+:root {
+  --radius-xs: 4px;     /* small images, search fields, thumbnails, utility */
+  --radius-sm: 8px;     /* chips, cards, small media, dialogs */
+  --radius-md: 16px;    /* medium product cards, grouped blocks */
+  --radius-lg: 22px;    /* signature media-card & soft placeholder radius */
+  --radius-xl: 30px;    /* research / topic filter pills */
+  --radius-pill: 32px;  /* primary CTA buttons */
+  --radius-full: 9999px;/* round status elements, fully pill controls */
+}
